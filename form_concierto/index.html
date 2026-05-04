@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripción Concierto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Registro al Concierto</h1>
+  <p class="subtitle">Completa tus datos para asegurar tu entrada</p>
+
+  <form id="formConcierto">
+
+    <div class="field">
+      <label>Nombre completo</label>
+      <input type="text" id="nombre">
+      <small class="error"></small>
+    </div>
+
+    <div class="field">
+      <label>Email</label>
+      <input type="email" id="email">
+      <small class="error"></small>
+    </div>
+
+    <div class="field">
+      <label>Tipo de entrada</label>
+      <select id="entrada">
+        <option value="">Seleccione una opción</option>
+        <option>General</option>
+        <option>VIP</option>
+      </select>
+      <small class="error"></small>
+    </div>
+
+    <div class="field">
+      <label>Cantidad</label>
+      <input type="number" id="cantidad" min="1">
+      <small class="error"></small>
+    </div>
+
+    <button type="submit">Reservar entrada</button>
+
+  </form>
+
+  <p id="success" class="success"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Crear Cuenta</h1>
+  <p class="subtitle">Regístrate para acceder al sistema</p>
+
+  <form id="formRegistro">
+
+    <div class="field">
+      <label>Nombre completo</label>
+      <input type="text" id="nombre">
+      <small class="error"></small>
+    </div>
+
+    <div class="field">
+      <label>Correo electrónico</label>
+      <input type="email" id="email">
+      <small class="error"></small>
+    </div>
+
+    <div class="field">
+      <label>Contraseña</label>
+      <input type="password" id="password">
+      <small class="error"></small>
+    </div>
+
+    <div class="field">
+      <label>Confirmar contraseña</label>
+      <input type="password" id="confirmar">
+      <small class="error"></small>
+    </div>
+
+    <button type="submit">Registrarse</button>
+
+  </form>
+
+  <p id="success" class="success"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #0f172a, #1d4ed8);
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Contenedor */
+.container {
+  background: #111827;
+  padding: 35px;
+  border-radius: 16px;
+  width: 360px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  font-size: 22px;
+  color: #93c5fd;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 25px;
+  color: #cbd5f5;
+}
+
+/* Campos */
+.field {
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 13px;
+  color: #cbd5f5;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin-top: 6px;
+  background: #1f2937;
+  color: #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+/* Efecto focus */
+input:focus, select:focus {
+  outline: none;
+  border: 1px solid #60a5fa;
+  background: #111827;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover botón */
+button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+}
+
+/* Mensajes */
+.error {
+  color: #f87171;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.success {
+  margin-top: 15px;
+  color: #4ade80;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Campo válido */
+.valido {
+  border: 2px solid #4ade80 !important;
+  background-color: rgba(74, 222, 128, 0.1);
+}
+
+/* Campo inválido */
+.invalido {
+  border: 2px solid #f87171 !important;
+  background-color: rgba(248, 113, 113, 0.1);
+}
